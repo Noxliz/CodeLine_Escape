@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLine: Escape Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="terminal-header">
+            <div class="terminal-controls">
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+                <span class="control close"></span>
+            </div>
+            <h1>CodeLine: Escape</h1>
+        </div>
+        <div class="level-info">
+            <span>Security Level: <span id="security-level">1</span></span>
+            <span>Alarms Triggered: <span id="alarms">0</span></span>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="code-prompt">
+            <p>Trace the correct path to escape:</p>
+            <code>function escape() { ... }</code>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
